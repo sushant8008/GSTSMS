@@ -1,0 +1,197 @@
+﻿@model GSTSMSLibrary.Secretary.Secretary
+
+@{
+    ViewBag.Title = "Survey And Poll";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Survey And Poll</title>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="~/Content/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="~/Content/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="~/Content/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Content/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Content/modules/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/components.css">
+    <link rel="stylesheet" href="~/Content/css/custom-style.css" />
+</head>
+
+<body>
+    <div class="main-content">
+        <section class="section">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Survey And Poll</h3>
+                </div>
+                <div class="card-body">
+
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="myTab3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="survey-tab" data-bs-toggle="tab" href="#survey" role="tab">Survey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="poll-tab" data-bs-toggle="tab" href="#poll" role="tab">Poll</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="myTabContent3">
+                        <!-- Survey Tab -->
+                        <div class="tab-pane fade show active" id="survey" role="tabpanel" aria-labelledby="survey-tab">
+
+                            <button class="btn btn-primary mt-3" id="btnConductSurvey">Conduct Survey</button>
+
+                            <!-- Date Filter -->
+                            <div class="row mb-3 mt-4">
+                                <div class="col-md-3">
+                                    <label>From:</label>
+                                    <input type="date" id="fromDate" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label>To:</label>
+                                    <input type="date" id="toDate" class="form-control">
+                                </div>
+                                <div class="col-md-3 d-flex align-items-end">
+                                    <button id="btnFilter" class="btn btn-primary">Filter</button>
+                                </div>
+                            </div>
+
+                            <!-- Survey Table -->
+                            <div class="main-wrapper main-wrapper-1">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped" id="table-1">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>@Html.DisplayNameFor(model => model.SrNo)</th>
+                                                                <th>@Html.DisplayNameFor(model => model.Title)</th>
+                                                                <th>@Html.DisplayNameFor(model => model.EndDate)</th>
+                                                                <th>@Html.DisplayNameFor(model => model.Status)</th>
+                                                                <th>@Html.DisplayNameFor(model => model.TotalResponses)</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            @foreach (var item in Model.lstUserDtl)
+                                                            {
+                                                                <tr>
+                                                                    <td>@Html.DisplayFor(modelItem => item.SrNo)</td>
+                                                                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                                                                    <td>@Html.DisplayFor(modelItem => item.EndDate)</td>
+                                                                    <td>@Html.DisplayFor(modelItem => item.Status)</td>
+                                                                    <td>@Html.DisplayFor(modelItem => item.TotalResponses)</td>
+                                                                </tr>
+                                                            }
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Poll Tab -->
+                        <div class="tab-pane fade" id="poll" role="tabpanel" aria-labelledby="poll-tab">
+                            <div id="pollContent" class="mt-4">
+                                <!-- Poll table will load here via AJAX -->
+                            </div>
+                        </div>
+                    </div> <!-- End Tab Content -->
+
+                </div> <!-- End Card Body -->
+            </div> <!-- End Card -->
+        </section>
+    </div> <!-- End Main Content -->
+    <!-- Survey Modal -->
+    <div class="modal fade" id="surveyModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div id="surveyPartialContainer">
+                    @Html.Partial("LoadSurveyForm", new GSTSMSLibrary.Secretary.Secretary())
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- poll Modal -->
+    <div class="modal fade" id="surveyModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div id="surveyPartialContainer">
+                    @Html.Partial("LoadpollForm", new GSTSMSLibrary.Secretary.Secretary())
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/modules/datatables/datatables.min.js"></script>
+    <script src="~/Content/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let isPollLoaded = false;
+
+            // Load Poll tab content via AJAX
+            $('#poll-tab').on('click', function () {
+                if (!isPollLoaded) {
+                    $.ajax({
+                        url: '@Url.Action("ShowListpoll", "Secretary")',
+                        type: 'GET',
+                        success: function (data) {
+                            $('#pollContent').html(data);
+                            isPollLoaded = true;
+                        },
+                        error: function () {
+                            $('#pollContent').html('<p class="text-danger">Error loading poll data.</p>');
+                        }
+                    });
+                }
+            });
+
+            // Open Survey Modal and load content via AJAX
+            $('#btnConductSurvey').on('click', function () {
+                $.ajax({
+                    url: '@Url.Action("LoadSurveyForm", "Secretary")',
+                    type: 'GET',
+                    success: function (result) {
+                        $('#surveyPartialContainer').html(result);
+                        var modal = new bootstrap.Modal(document.getElementById('surveyModal'));
+                        modal.show();
+                    },
+                    error: function () {
+                        alert('Failed to load the survey form.');
+                    }
+                });
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

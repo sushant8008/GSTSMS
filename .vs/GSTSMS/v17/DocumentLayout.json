@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\GSTSMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|e:\\gstsms\\gstsms\\views\\secretary\\showlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\views\\secretary\\showlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|E:\\GSTSMS\\gstsms\\views\\secretary\\showlistpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\views\\secretary\\showlistpoll.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|E:\\GSTSMS\\gstsms\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\controllers\\secretarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|E:\\GSTSMS\\gstsms\\views\\secretary\\loadpollform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\views\\secretary\\loadpollform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|E:\\GSTSMS\\gstsms\\views\\secretary\\loadsurveyform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\views\\secretary\\loadsurveyform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9EE404-9D69-41B5-B8C0-986D1F0DD7D6}|GSTSMSLibrary\\GSTSMSLibrary.csproj|E:\\GSTSMS\\gstsmslibrary\\secretary\\secretary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D9EE404-9D69-41B5-B8C0-986D1F0DD7D6}|GSTSMSLibrary\\GSTSMSLibrary.csproj|solutionrelative:gstsmslibrary\\secretary\\secretary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D9EE404-9D69-41B5-B8C0-986D1F0DD7D6}|GSTSMSLibrary\\GSTSMSLibrary.csproj|E:\\GSTSMS\\gstsmslibrary\\secretary\\balsecretary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D9EE404-9D69-41B5-B8C0-986D1F0DD7D6}|GSTSMSLibrary\\GSTSMSLibrary.csproj|solutionrelative:gstsmslibrary\\secretary\\balsecretary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DD8D65-AE3D-4AB1-8A65-ABD4481D4970}|GSTSMSHelper\\GSTSMSHelper.csproj|E:\\GSTSMS\\gstsmshelper\\mssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DD8D65-AE3D-4AB1-8A65-ABD4481D4970}|GSTSMSHelper\\GSTSMSHelper.csproj|solutionrelative:gstsmshelper\\mssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|E:\\GSTSMS\\gstsms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C1F2D6C-8C7B-434A-92DD-ABE86918AE28}|GSTSMS\\GSTSMS.csproj|solutionrelative:gstsms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MSSQL.cs",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMSHelper\\MSSQL.cs",
+              "RelativeDocumentMoniker": "GSTSMSHelper\\MSSQL.cs",
+              "ToolTip": "E:\\GSTSMS\\GSTSMSHelper\\MSSQL.cs",
+              "RelativeToolTip": "GSTSMSHelper\\MSSQL.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAiwIsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:50:31.978Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BALSecretary.cs",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMSLibrary\\Secretary\\BALSecretary.cs",
+              "RelativeDocumentMoniker": "GSTSMSLibrary\\Secretary\\BALSecretary.cs",
+              "ToolTip": "E:\\GSTSMS\\GSTSMSLibrary\\Secretary\\BALSecretary.cs",
+              "RelativeToolTip": "GSTSMSLibrary\\Secretary\\BALSecretary.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAMwJoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:35:50.806Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SecretaryController.cs",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Controllers\\SecretaryController.cs",
+              "RelativeDocumentMoniker": "GSTSMS\\Controllers\\SecretaryController.cs",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Controllers\\SecretaryController.cs",
+              "RelativeToolTip": "GSTSMS\\Controllers\\SecretaryController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAArwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:20:56.148Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowList.cshtml",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\ShowList.cshtml",
+              "RelativeDocumentMoniker": "GSTSMS\\Views\\Secretary\\ShowList.cshtml",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\ShowList.cshtml",
+              "RelativeToolTip": "GSTSMS\\Views\\Secretary\\ShowList.cshtml",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-07T10:30:28.981Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoadpollForm.cshtml",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\LoadpollForm.cshtml",
+              "RelativeDocumentMoniker": "GSTSMS\\Views\\Secretary\\LoadpollForm.cshtml",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\LoadpollForm.cshtml",
+              "RelativeToolTip": "GSTSMS\\Views\\Secretary\\LoadpollForm.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T16:40:29.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Secretary.cs",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMSLibrary\\Secretary\\Secretary.cs",
+              "RelativeDocumentMoniker": "GSTSMSLibrary\\Secretary\\Secretary.cs",
+              "ToolTip": "E:\\GSTSMS\\GSTSMSLibrary\\Secretary\\Secretary.cs",
+              "RelativeToolTip": "GSTSMSLibrary\\Secretary\\Secretary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T18:57:52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoadSurveyForm.cshtml",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\LoadSurveyForm.cshtml",
+              "RelativeDocumentMoniker": "GSTSMS\\Views\\Secretary\\LoadSurveyForm.cshtml",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\LoadSurveyForm.cshtml",
+              "RelativeToolTip": "GSTSMS\\Views\\Secretary\\LoadSurveyForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T19:23:31.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GSTSMS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GSTSMS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAM8BAAAAAAAAAAAcwNEBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T10:56:22.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShowListpoll.cshtml",
+              "DocumentMoniker": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\ShowListpoll.cshtml",
+              "RelativeDocumentMoniker": "GSTSMS\\Views\\Secretary\\ShowListpoll.cshtml",
+              "ToolTip": "E:\\GSTSMS\\GSTSMS\\Views\\Secretary\\ShowListpoll.cshtml",
+              "RelativeToolTip": "GSTSMS\\Views\\Secretary\\ShowListpoll.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T13:32:00.703Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

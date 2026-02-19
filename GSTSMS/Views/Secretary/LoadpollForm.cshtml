@@ -1,0 +1,169 @@
+﻿@model GSTSMSLibrary.Secretary.Secretary
+
+<!-- Modal Close Button -->
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+
+<!-- Poll Form Card -->
+<div class="card p-4 border border-dark">
+    <h4><strong>Conduct Poll</strong></h4>
+
+    <!-- Poll Form -->
+    <form id="pollForm">
+        @Html.AntiForgeryToken()
+
+
+        <!-- Select Sub Type -->
+        <div class="form-group">
+            <label>Select Sub Type</label>
+            <select name="SubTypeId" class="form-control" required>
+                <option value="">-- Select SubType --</option>
+                @foreach (var item in Model.SubTypeList)
+                {
+                    <option value="@item.SubTypeId">@item.SubType</option>
+                }
+            </select>
+        </div>
+
+
+
+
+
+        <!-- Start and End Dates -->
+        <div class="form-group">
+            <label for="StartDate">Start Date</label>
+            <input type="date" class="form-control" id="StartDate" name="StartDate" required />
+        </div>
+        <div class="form-group">
+            <label for="DeadlineDate">End Date</label>
+            <input type="date" class="form-control" id="DeadlineDate" name="DeadlineDate" required />
+        </div>
+
+        <!-- Questions Container -->
+        <div id="questionContainer"></div>
+
+        <!-- Add Question Button -->
+        <div class="mb-3 text-right">
+            <button type="button" class="btn btn-primary" id="addQuestion">Add Question</button>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-success">Create Poll</button>
+        </div>
+    </form>
+</div>
+
+<!-- Dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Script for Dynamic Poll Form -->
+<script>
+    $(document).ready(function () {
+        let questionCount = 0;
+
+        function createOptionHTML(qIndex, oIndex) {
+            return `
+                <div class="input-group mb-2 option-item">
+                    <input type="text" name="Questions[${qIndex}].Options[${oIndex}]" class="form-control" placeholder="Option ${oIndex + 1}" required />
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-danger btn-sm deleteOption"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>`;
+        }
+
+        function createQuestionHTML(index) {
+            return `
+                <div class="question-block border p-3 mb-3" data-qindex="${index}">
+                    <div class="form-group">
+                        <label><strong>Question ${index + 1}</strong></label>
+                        <input type="text" name="Questions[${index}].Text" class="form-control mb-2" placeholder="Enter your question" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Options</label>
+                        <div class="option-list" data-qindex="${index}">
+                            ${createOptionHTML(index, 0)}
+                        </div>
+                        <button type="button" class="btn btn-outline-primary btn-sm addOption" data-qindex="${index}">
+                            Add Option
+                        </button>
+                    </div>
+                </div>`;
+        }
+
+        // Add Question
+        $('#addQuestion').click(function () {
+            $('#questionContainer').append(createQuestionHTML(questionCount));
+            questionCount++;
+        });
+
+        // Add Option
+        $(document).on('click', '.addOption', function () {
+            const qIndex = $(this).data('qindex');
+            const optionList = $(`.option-list[data-qindex="${qIndex}"]`);
+            const oIndex = optionList.children('.option-item').length;
+            optionList.append(createOptionHTML(qIndex, oIndex));
+        });
+
+        // Delete Option
+        $(document).on('click', '.deleteOption', function () {
+            const optionBlock = $(this).closest('.option-item');
+            const optionList = optionBlock.closest('.option-list');
+            if (optionList.children('.option-item').length > 1) {
+                optionBlock.remove();
+            } else {
+                alert("At least one option is required.");
+            }
+        });
+
+        // Auto add the first question on load
+        $('#addQuestion').click();
+
+       
+
+
+
+        // Submit Form via AJAX
+        $('#pollForm').submit(function (e) {
+            e.preventDefault();
+            var form = $(this);
+            var formData = form.serialize();
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                url: '/Secretary/InsertpollQuestion',
+                type: 'POST',
+                data: formData,
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                success: function (response) {
+                    if (response.success) {
+                        alert(response.message);
+                        form[0].reset();
+                        $('#questionContainer').html('');
+                        questionCount = 0;
+                        $('#addQuestion').click(); 
+                    } else {
+                        alert('Error: ' + response.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert('An unexpected error occurred: ' + error);
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+    });
+</script>

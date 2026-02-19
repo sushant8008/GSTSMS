@@ -1,0 +1,6 @@
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\bin\Debug\GSTSMSHelper.dll
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\bin\Debug\GSTSMSHelper.pdb
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\obj\Debug\GSTSMSHelper.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\obj\Debug\GSTSMSHelper.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\obj\Debug\GSTSMSHelper.dll
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSHelper\obj\Debug\GSTSMSHelper.pdb

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="~/Content/modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/modules/fontawesome/css/all.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="~/Content/modules/datatables/datatables.min.css">
+    <link rel="stylesheet" href="~/Content/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Content/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Content/modules/bootstrap-daterangepicker/daterangepicker.css" />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/css/components.css">
+    <link rel="stylesheet" href="~/Content/css/custom-style.css" />
+</head>
+<body>
+    <button class="btn btn-primary" id="btnConductpoll">Conduct Poll</button>
+    <div class="card p-4">
+        <!-- Filter Section -->
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <label>From Date</label>
+                <input type="date" id="fromDate" class="form-control" />
+            </div>
+            <div class="col-md-3">
+                <label>To Date</label>
+                <input type="date" id="toDate" class="form-control" />
+            </div>
+            <div class="col-md-3 d-flex align-items-end">
+                <button class="btn btn-primary" id="btnFilter">Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- poll Table -->
+    <div class="main-wrapper main-wrapper-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" id="pollTable">
+                                <thead>
+                                    <tr>
+                                        <th>Sr No</th>
+                                        <th>Title</th>
+                                        <th>End Date</th>
+                                        <th>Status</th>
+                                        <th>Total Responses</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.poll)
+                                    {
+                                        <tr>
+                                            <td>@item.SrNo</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.EndDate</td>
+                                            <td>@item.Status</td>
+                                            <td>@item.TotalResponses</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            $(document).ready(function () {
+                $('#surveyTable').DataTable();
+                $('#pollTable').DataTable();
+            });
+
+            // Open Survey Modal and load content via AJAX
+            $('#btnConductpoll').on('click', function () {
+                    $.ajax({
+                        url: '@Url.Action("LoadpollForm", "Secretary")',
+                        type: 'GET',
+                        success: function (result) {
+                            $('#surveyPartialContainer').html(result);
+                            var modal = new bootstrap.Modal(document.getElementById('surveyModal'));
+                            modal.show();
+                        },
+                        error: function () {
+                            alert('Failed to load the survey form.');
+                        }
+                    });
+});
+
+
+
+
+
+
+    </script>
+
+    <!-- Scripts -->
+    <script src="~/Content/modules/jquery.min.js"></script>
+    <script src="~/Content/modules/popper.js"></script>
+    <script src="~/Content/modules/tooltip.js"></script>
+    <script src="~/Content/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="~/Content/modules/moment.min.js"></script>
+    <script src="~/Content/js/stisla.js"></script>
+
+    <script src="~/Content/modules/datatables/datatables.min.js"></script>
+    <script src="~/Content/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Content/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+    <script src="~/Content/modules/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="~/Content/js/page/modules-datatables.js"></script>
+    <script src="~/Content/js/scripts.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+</body>
+</html>

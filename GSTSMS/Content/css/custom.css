@@ -1,0 +1,31 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+.main-content {
+    padding-left: 129px !important;
+    padding-right: 30px !important;
+    padding-top: 51px !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+
+
+
+/* Target the table inside .card with id table-1 */
+.card #table-1 thead th {
+    background-color: #b9f0e6 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+/* Optional: hover effect */
+.card #table-1 tbody tr:hover {
+    background-color: #e9e9e9;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\bin\Debug\GSTSMSLibrary.dll
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\bin\Debug\GSTSMSLibrary.pdb
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\bin\Debug\GSTSMSHelper.dll
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\bin\Debug\GSTSMSHelper.pdb
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\obj\Debug\GSTSMSLibrary.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\obj\Debug\GSTSMSLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\obj\Debug\GSTSMSLi.F1D80D7A.Up2Date
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\obj\Debug\GSTSMSLibrary.dll
+C:\Users\DELL\Desktop\HSMS\HSMS\GSTSMS\GSTSMSLibrary\obj\Debug\GSTSMSLibrary.pdb
